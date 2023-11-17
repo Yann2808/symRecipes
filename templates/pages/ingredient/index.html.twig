@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}SymRecipes - Ingrédients{% endblock %}
+
+{% block body %}
+    <div class="container">
+        <h1> Mes Ingrédients </p>
+
+        {% for ingredient in ingredients %}
+            <div>
+                <p>
+                    {{ ingredient.name }}
+                </p>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}
